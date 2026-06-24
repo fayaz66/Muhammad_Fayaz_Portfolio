@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Muhammad Fayaz - Publications</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic portfolio of Muhammad Fayaz, Ph.D. Scholar in AI and Computer Vision at Sejong University.">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bento.css">
+  <style>
+    .year-header { color:#00f2fe;font-size:24px;font-weight:700;margin-top:30px;margin-bottom:15px;border-bottom:1px solid rgba(0,242,254,0.3);padding-bottom:5px; }
+    #publication-list li { background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;margin-bottom:15px;border:1px solid rgba(255,255,255,0.05);color:#d4d4d8;line-height:1.6;transition:transform .2s,background .3s; }
+    #publication-list li:hover { background:rgba(0,242,254,0.05);transform:translateY(-2px); }
+    .badge { background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);font-size:11px;padding:4px 7px;border-radius:6px;font-weight:700;color:#e0e0e0;white-space:nowrap; }
+    .filter-btn { border:1px solid rgba(255,255,255,0.12);background:transparent;color:#fff;cursor:pointer;padding:8px 14px;font-size:14px; }
+    .filter-btn.active { border-color:rgba(0,242,254,0.5);background:rgba(0,242,254,0.2);color:#00f2fe; }
+  </style>
+</head>
+<body>
+  <div class="bento-container">
+    
+    <div class="bento-item bento-hero delay-1">
+      <img src="./assets/images/profile.jpg" alt="Muhammad Fayaz" class="avatar-huge">
+      <h1 class="bento-title">Muhammad Fayaz</h1>
+      <p class="bento-subtitle">Ph.D. Scholar in AI and Computer Vision</p>
+      <p class="bento-list-text" style="margin-top:10px;text-align:center;max-width:520px;">Computer Vision and Pattern Recognition (CVPR) Lab, Sejong University, Seoul</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/muhammad-fayaz-43bba4210/" target="_blank" rel="noopener" title="LinkedIn"><img src="assets/images/Linkdinn .png" alt="LinkedIn"></a>
+        <a href="https://github.com/fayaz66/" target="_blank" rel="noopener" title="GitHub"><img src="assets/images/GitHub.png" alt="GitHub"></a>
+        <a href="https://scholar.google.com/citations?user=F-S76iUAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><img src="assets/images/GoogleSchoular.png" alt="Google Scholar"></a>
+      </div>
+    </div>
+    <div class="bento-item bento-nav delay-2"><a href="index.html" class="nav-link ">About</a><a href="CV.html" class="nav-link ">CV</a><a href="publications.html" class="nav-link active">Publications</a><a href="Contact.html" class="nav-link ">Contact</a></div>
+    
+    <div class="bento-item bento-half delay-3" style="display:flex;justify-content:space-around;align-items:center;gap:20px;flex-wrap:wrap;">
+      <div style="text-align:center;"><p class="bento-stat-num"><span id="scholar-citations" data-target="389">0</span></p><p class="bento-stat-label">Citations</p></div>
+      <div style="text-align:center;"><p class="bento-stat-num"><span id="scholar-hindex" data-target="10">0</span></p><p class="bento-stat-label">h-index</p></div>
+      <div style="text-align:center;"><p class="bento-stat-num"><span id="scholar-i10index" data-target="10">0</span></p><p class="bento-stat-label">i10-index</p></div>
+    </div>
+    <div class="bento-item bento-wide delay-4">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-bottom:20px;gap:15px;">
+        <h2 class="bento-title" style="margin:0;">Publications & Manuscripts</h2>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button id="sort-year" class="nav-link filter-btn active">Sort by Year</button>
+          <button id="sort-citation" class="nav-link filter-btn">Sort by Citations</button>
+          <button id="filter-published" class="nav-link filter-btn">Published/Accepted</button>
+          <button id="filter-all" class="nav-link filter-btn active">All</button>
+        </div>
+      </div>
+      <p class="bento-list-text" style="margin-bottom:20px;">This list was rebuilt from the uploaded CV and deduplicated by normalized paper title. Exact duplicate titles from the CV were kept only once.</p>
+      <ul id="publication-list" style="list-style:none;padding:0;"></ul>
+    </div>
+  </div>
+  <script src="./assets/js/bento.js"></script>
+  <script>
+  const scholarProfileUrl = "https://scholar.google.com/citations?user=F-S76iUAAAAJ&hl=en";
+  // PUBLICATIONS_DATA_START
+  const publications = [
+  {
+    "title": "GeoSwin: Hierarchical Representation Learning and a Large-Scale Earth Observation Benchmark",
+    "authors": [
+      "Muhammad Fayaz",
+      "Zulfiqar Ahmad Khan",
+      "Lien Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "year": 2026,
+    "status": "Published: April 2026",
+    "rank": "Q1",
+    "impactfactor": "8.3",
+    "type": "Conference Paper",
+    "citations": 0
+  },
+  {
+    "title": "HQDL: A Hybrid Quantum-Deep Learning Framework for Real-Time Fire Detection Using UAV Remote Sensing",
+    "authors": [
+      "Sufyan Danish",
+      "Waseem Ullah",
+      "Muhammad Fayaz",
+      "L. Minh Dang",
+      "Hyoung-Kyu Song",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "year": 2026,
+    "status": "Accepted",
+    "rank": "Q1",
+    "impactfactor": "5.3",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "MedViTNet: A Hybrid Deep Learning Framework for Early and Accurate Detection of Retinal Diseases",
+    "authors": [
+      "Sufyan Danish",
+      "Muhammad Fayaz",
+      "Muhammad Ayyaz Akbar Khan",
+      "Asmat Noreen",
+      "Amirmohammad Montazeri",
+      "Chun-Ming Lai",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Electronics",
+    "year": 2026,
+    "status": "Revision 1 Submitted",
+    "rank": "Q2",
+    "impactfactor": "2.6",
+    "type": "Journal Manuscript",
+    "citations": 0
+  },
+  {
+    "title": "Hierarchical Optimization of Task-Adaptive Networks for Integrated Registration and Few-Shot Medical Image Segmentation",
+    "authors": [
+      "Muhammad Fayaz",
+      "Zeeshan Ali Haider",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Biomedical Signal Processing and Control",
+    "year": 2026,
+    "status": "Published: April 2026",
+    "rank": "Q1",
+    "impactfactor": "4.9",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "CALCNet: A Novel Cross-Module Attention Network for Efficient Land Cover Classification",
+    "authors": [
+      "Muhammad Fayaz",
+      "Hikmat Yar*",
+      "Weiwei Jiang",
+      "Anwar Hassan Ibrahim",
+      "Muhammad Islam",
+      "L. Minh Dang*"
+    ],
+    "venue": "Remote Sensing",
+    "year": 2026,
+    "status": "Published: April 2026",
+    "rank": "Q1",
+    "impactfactor": "4.1",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "TumorNet: A Hybrid Lightweight Framework for Brain Tumor Classification and Reasoning",
+    "authors": [
+      "Hanxiang Wang",
+      "Muhammad Zaqeem",
+      "Muhammad Fayaz",
+      "Defu Qiu",
+      "Sajjad Ahadzadeh",
+      "Tan N. Nguyen*",
+      "L. Minh Dang*"
+    ],
+    "venue": "Information Sciences",
+    "year": 2026,
+    "status": "Published: March 2026",
+    "rank": "Q1",
+    "impactfactor": "6.8",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Demystifying Artificial Intelligence: A Systematic Review of Explainable Artificial Intelligence in Medical Imaging",
+    "authors": [
+      "Muhammad Fayaz",
+      "Kim Hagsong",
+      "Sufyan Danish",
+      "L. Minh Dang",
+      "Abolghasem Sadeghi Niaraki",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Sensors",
+    "year": 2026,
+    "status": "Published: March 2026",
+    "rank": "Q2",
+    "impactfactor": "3.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "SwinHCAD: A Robust Multi-Modality Segmentation Model for Brain Tumors Using Transformer and Channel-Wise Attention",
+    "authors": [
+      "Seyong Jin",
+      "Muhammad Fayaz",
+      "L. Minh Dang",
+      "Hyoung-Kyu Song",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Computers, Materials, & Continua",
+    "year": 2026,
+    "status": "Published: 2026",
+    "rank": "Q3",
+    "impactfactor": "2.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "A Comprehensive Approach for Image Quality Assessment Using Quality-Centric Embedding and Ranking Networks",
+    "authors": [
+      "Zeeshan Ali Haider",
+      "Sareer Ul Amin",
+      "Muhammad Fayaz",
+      "Fida Muhammad Khan",
+      "Hyeonjoon Moon",
+      "Sanghyun Seoe*"
+    ],
+    "venue": "Pattern Recognition",
+    "year": 2025,
+    "status": "Published: December 2025",
+    "rank": "Q1",
+    "impactfactor": "7.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Efficient Transformer-Based Semantic Segmentation of Colonic Polyps Using SegFormer",
+    "authors": [
+      "Gul E Arzu",
+      "Muhammad Fayaz",
+      "Usman Ali",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2025,
+    "status": "Published: December 2025",
+    "rank": "Q1",
+    "impactfactor": "6.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "PolySAGN: Hierarchical Multi-Scale Representation Learning with Scale-Specific Attention for Accurate Polyp Segmentation",
+    "authors": [
+      "Wenqi Zhang",
+      "Yue Zhang",
+      "Muhammad Fayaz",
+      "L. Minh Dang",
+      "Tan N. Nguyen",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2025,
+    "status": "Published: December 2025",
+    "rank": "Q1",
+    "impactfactor": "6.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Enhancing Pine Wilt Disease Detection with Synthetic Data and External Attention-Based Transformers",
+    "authors": [
+      "Sareer Ul Amin",
+      "Yonghoon Jung",
+      "Muhammad Fayaz",
+      "Bumsoo Kim",
+      "Sanghyun Seo*"
+    ],
+    "venue": "Engineering Applications of Artificial Intelligence",
+    "year": 2025,
+    "status": "Published: November 2025",
+    "rank": "Q1",
+    "impactfactor": "8.0",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "DLAN: A Dual Attention Network for Effective Land Cover Classification in Remote Sensing",
+    "authors": [
+      "Muhammad Fayaz",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Knowledge-Based Systems",
+    "year": 2025,
+    "status": "Published: June 2025",
+    "rank": "Q1",
+    "impactfactor": "7.2",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "End-to-End Plant Disease Detection Using Transformers with Collaborative Hybrid Assignment Trainings",
+    "authors": [
+      "Yanfen Li",
+      "Muhammad Fayaz",
+      "Sufyan Danish",
+      "Hanxiang Wang",
+      "Tan N. Nguyen",
+      "L. Minh Dang*"
+    ],
+    "venue": "Applied Soft Computing",
+    "year": 2025,
+    "status": "Published: October 2025",
+    "rank": "Q1",
+    "impactfactor": "6.6",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Transformer-Based Detection of Abnormal Rice Growth Using Drone-Based Multispectral Imaging",
+    "authors": [
+      "Yanfen Li",
+      "L. Minh Dang",
+      "Hanxiang Wang",
+      "Muhammad Fayaz",
+      "Sufyan Danish",
+      "Junliang Shang",
+      "Hyoung-Kyu Song",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Computers and Electronics in Agriculture",
+    "year": 2025,
+    "status": "Published: December 2025",
+    "rank": "Q1",
+    "impactfactor": "8.9",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Large Language Models in Medical Image Analysis: A Systematic Survey and Future Directions",
+    "authors": [
+      "Muhammad Fayaz",
+      "Bushra Urooj",
+      "L. Minh Dang*",
+      "Kyung Won Kim*"
+    ],
+    "venue": "Bioengineering",
+    "year": 2025,
+    "status": "Published: July 2025",
+    "rank": "Q1",
+    "impactfactor": "3.7",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Universal Image Segmentation with Arbitrary Granularity for Efficient Pest Monitoring",
+    "authors": [
+      "L. Minh Dang",
+      "Sufyan Danish",
+      "Muhammad Fayaz",
+      "Asma Khan",
+      "Gul E Arzu",
+      "Hyoung-Kyu Song",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Horticulturae",
+    "year": 2025,
+    "status": "Published: December 2025",
+    "rank": "Q1",
+    "impactfactor": "5.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Masked Autoencoder-Based Vision Framework for Robust Fire Detection in Complex Environments",
+    "authors": [
+      "Hanxiang Wang",
+      "Muhammad Fayaz",
+      "Awais Ahmad",
+      "Yanfen Li",
+      "Tan N. Nguyen*",
+      "L. Minh Dang*"
+    ],
+    "venue": "Process Safety and Environmental Protection",
+    "year": 2025,
+    "status": "Published: October 2025",
+    "rank": "Q1",
+    "impactfactor": "7.8",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Enhancing Land Cover Classification via Deep Ensemble Network",
+    "authors": [
+      "Muhammad Fayaz",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Knowledge-Based Systems",
+    "year": 2024,
+    "status": "Published: December 2024",
+    "rank": "Q1",
+    "impactfactor": "7.2",
+    "type": "Journal Article",
+    "citations": 35
+  },
+  {
+    "title": "Land-Cover Classification Using Deep Learning with High-Resolution Remote-Sensing Imagery",
+    "authors": [
+      "L. Minh Dang",
+      "Sufyan Danish",
+      "Asma Khan",
+      "Nur Alam",
+      "Muhammad Fayaz",
+      "Dinh Khuong Nguyen",
+      "Hyoung-Kyu Song",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Applied Sciences",
+    "year": 2024,
+    "status": "Published: February 2024",
+    "rank": "Q2",
+    "impactfactor": "2.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "An Efficient Zero-Labeling Segmentation Approach for Pest Monitoring on Smartphone-Based Images",
+    "authors": [
+      "Muhammad Fayaz",
+      "Junyoung Nam",
+      "L. Minh Dang",
+      "Hyoung-Kyu Song",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "European Journal of Agronomy",
+    "year": 2024,
+    "status": "Published: October 2024",
+    "rank": "Q1",
+    "impactfactor": "5.5",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "An Efficient and Robust Hand Gesture Recognition System of Sign Language Employing Finetuned Inception-V3 and EfficientNet-B0 Network",
+    "authors": [
+      "Adnan Hussain",
+      "Sareer Ul Amin",
+      "Muhammad Fayaz",
+      "Sanghyun Seo*"
+    ],
+    "venue": "Computer Systems Science and Engineering",
+    "year": 2023,
+    "status": "Published: April 2023",
+    "rank": "Q1",
+    "impactfactor": "4.397",
+    "type": "Journal Article",
+    "citations": 0
+  },
+  {
+    "title": "Optimized Vision Transformer with Shifted Patch and Local Attention for Robust Land Cover Mapping",
+    "authors": [
+      "Muhammad Fayaz",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2026,
+    "status": "Under Review",
+    "rank": "Q1",
+    "impactfactor": "6.5",
+    "type": "Journal Manuscript",
+    "citations": 0
+  },
+  {
+    "title": "Advanced Medical Representation Learning",
+    "authors": [
+      "Muhammad Fayaz",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2026,
+    "status": "Under Review",
+    "rank": "Q1",
+    "impactfactor": "6.5",
+    "type": "Journal Manuscript",
+    "citations": 0
+  },
+  {
+    "title": "Generalizing Anomaly Detection in Medical Imaging through Visual-Language Model Adaptation",
+    "authors": [
+      "Muhammad Fayaz",
+      "Sareer Ul Amin",
+      "Sufyan Danish",
+      "Sher Taj",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "International Journal of Computer Vision",
+    "year": 2026,
+    "status": "Under Review",
+    "rank": "Q1",
+    "impactfactor": "9.3",
+    "type": "Journal Manuscript",
+    "citations": 0
+  },
+  {
+    "title": "GeoSpikeFormer",
+    "authors": [
+      "Muhammad Fayaz",
+      "Amir Montazeri",
+      "Zulfiqar Ahmad Khan",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "IEEE Transactions on Image Processing",
+    "year": 2026,
+    "status": "Under Review",
+    "rank": "Q1",
+    "impactfactor": "13.7",
+    "type": "Journal Manuscript",
+    "citations": 0
+  },
+  {
+    "title": "DeepGeo-Cover: A Comprehensive Review of Deep Learning Techniques and Applications in Land Cover Mapping and Remote Sensing",
+    "authors": [
+      "Muhammad Fayaz",
+      "Sufyan Danish",
+      "Amir Montazeri",
+      "Minjong Cheon",
+      "Turki M. Alanazi",
+      "L. Minh Dang",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Information Fusion",
+    "year": 2026,
+    "status": "Under Review",
+    "rank": "Q1",
+    "impactfactor": "15.5",
+    "type": "Journal Manuscript",
+    "citations": 0
+  },
+  {
+    "title": "FocalFireNet: A Lightweight FocalNet-Based Framework for Real-Time Fire Detection in UAV Remote Sensing Imagery",
+    "authors": [
+      "Sufyan Danish",
+      "Muhammad Fayaz",
+      "Gul E Arzu",
+      "L. Minh Dang",
+      "Hyoung-Kyu Song",
+      "Hyeonjoon Moon*"
+    ],
+    "venue": "Geo-spatial Information Science",
+    "year": 2026,
+    "status": "Under Review",
+    "rank": "Q1",
+    "impactfactor": "5.5",
+    "type": "Journal Manuscript",
+    "citations": 0
+  }
+];
+  // PUBLICATIONS_DATA_END
+
+  const publicationList = document.getElementById('publication-list');
+  let currentSort = 'year';
+  let currentFilter = 'all';
+
+  function highlightName(authors) {
+    return authors.map(a => a.replace(/Muhammad Fayaz/gi, '<span style="color:#4facfe;font-weight:700;">Muhammad Fayaz</span>')).join(', ');
+  }
+  function linkFor(pub) {
+    return pub.doi ? `https://doi.org/${pub.doi}` : `https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}`;
+  }
+  function isPublished(pub) {
+    return !/under review|revision/i.test(pub.status || '');
+  }
+  function renderItem(pub) {
+    const li = document.createElement('li');
+    const citationBlock = pub.citations && Number(pub.citations) > 0 ? `<div style="text-align:center;margin-bottom:8px;"><div style="font-size:11px;font-weight:600;color:#00f2fe;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px;">Citations</div><div style="width:50px;height:50px;border-radius:50%;background:rgba(0,242,254,.15);border:2px solid rgba(0,242,254,.8);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#fff;margin:0 auto;box-shadow:0 0 10px rgba(0,242,254,.4);">${pub.citations}</div></div>` : '';
+    li.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;">
+      <div style="flex:1;">
+        <a href="${linkFor(pub)}" target="_blank" rel="noopener" style="color:#00f2fe;text-decoration:none;display:block;font-size:18px;margin-bottom:4px;font-weight:700;">${pub.title}</a>
+        <div style="font-size:15px;font-style:italic;margin-bottom:6px;color:#e0e0e0;">${pub.venue || ''}</div>
+        <div style="margin-bottom:6px;font-size:15px;">Authors: ${highlightName(pub.authors || [])}</div>
+        <div style="opacity:.82;font-size:14px;">${pub.type || ''}${pub.status ? ' · ' + pub.status : ''}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;align-items:center;min-width:90px;padding-top:5px;">
+        ${citationBlock}
+        ${pub.rank ? `<span class="badge">Rank: ${pub.rank}</span>` : ''}
+        ${pub.impactfactor ? `<span class="badge">IF: ${pub.impactfactor}</span>` : ''}
+        <span class="badge">${pub.year || 'N/A'}</span>
+      </div>
+    </div>`;
+    publicationList.appendChild(li);
+  }
+  function renderPublications() {
+    publicationList.innerHTML = '';
+    let data = publications.filter(p => currentFilter === 'all' || isPublished(p));
+    if (currentSort === 'citation') {
+      data = [...data].sort((a,b)=>(Number(b.citations)||0)-(Number(a.citations)||0) || (b.year||0)-(a.year||0));
+      data.forEach(renderItem);
+      return;
+    }
+    const byYear = {};
+    data.forEach(pub => { const y = pub.year || 'N/A'; if (!byYear[y]) byYear[y]=[]; byYear[y].push(pub); });
+    Object.keys(byYear).sort((a,b)=>Number(b)-Number(a)).forEach(year => {
+      const yearHeader = document.createElement('div');
+      yearHeader.className = 'year-header';
+      yearHeader.textContent = year;
+      publicationList.appendChild(yearHeader);
+      byYear[year].forEach(renderItem);
+    });
+  }
+  function setActive(buttons, active) { buttons.forEach(b => b.classList.remove('active')); active.classList.add('active'); }
+  const sortYear = document.getElementById('sort-year');
+  const sortCitation = document.getElementById('sort-citation');
+  const filterPublished = document.getElementById('filter-published');
+  const filterAll = document.getElementById('filter-all');
+  sortYear.addEventListener('click', () => { currentSort='year'; setActive([sortYear, sortCitation], sortYear); renderPublications(); });
+  sortCitation.addEventListener('click', () => { currentSort='citation'; setActive([sortYear, sortCitation], sortCitation); renderPublications(); });
+  filterPublished.addEventListener('click', () => { currentFilter='published'; setActive([filterPublished, filterAll], filterPublished); renderPublications(); });
+  filterAll.addEventListener('click', () => { currentFilter='all'; setActive([filterPublished, filterAll], filterAll); renderPublications(); });
+  renderPublications();
+  </script>
+</body>
+</html>
